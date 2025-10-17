@@ -3,603 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/CUBO_GD.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Extremes de RaWellGD</title>
 </head>
 <body>
-    <header>
-        <h1>MIS EXTREME DEMONS</h1>
-    </header>
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://www.youtube.com/watch?v=incSa-8gLHo&list=RD7ixTSPHMqaQ&index=21" target="_blank" class="level">
-        <img src="Imágenes/nightrider.png" alt="Congregation">
-        <div class="level-info">
-          <h2>#2 – Night Rider</h2>
-          <p>by LmAnubis</p>
-          <p>Top #411</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
+
+<section class="hero-section">
+  <div class="video-container">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="/videos/black-fondo.mp4" type="video/mp4" />
+      Tu navegador no soporta videos HTML5.
+    </video>
+    <div class="overlay-dark"></div>
+    <div class="overlay-gradient"></div>
+  </div>
+  <script>
+            const video = document.querySelector('video');
+            video.playbackRate = 0.2;
+        </script>
+
+  <div class="hero-content">
+    <h1 class="hero-title">
+      <span class="block">Extreme demons</span> 
+      <span class="gradient-text">RaWellGD</span>
+    </h1>
+    <p class="hero-description">
+      Bienvenido a mi lista de extreme demons, en esta lista estarán todos los extreme demons que he completado hasta el momento. Los niveles están ordenados desde el más dificil hasta el más fácil.
+    <div class="hero-buttons">
+      <a href="#events" class="btn btn-primary">Ver lista</a>
+    </div>
+  </div>
+</section>
+
+  <header>
+    <a class="rawellgd"></a>
+  <div class="header-content">
+    <div class="logo-area">
+      <img src="https://yt3.googleusercontent.com/qGpYRFNiEKSE_rg9V9Yec0L9mdyMw5syT8N6lvHOHmux5-zh_tDkzcEDX0GR8HcUwwhmbMGouQ=s160-c-k-c0x00ffffff-no-rj" alt="RaWellGD Logo" class="logo-img">
+      <span class="logo-text">RaWellGD</span>
     </div>
 
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="#" target="_blank" class="level">
-        <img src="Imágenes/desconocido.png" alt="Congregation">
-        <div class="level-info">
-          <h2>#3 – ???</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
+    <div class="header-title">Mis Extreme Demons</div>
 
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="#" target="_blank" class="level">
-        <img src="Imágenes/desconocido.png" alt="Congregation">
-        <div class="level-info">
-          <h2>#4 – ???</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
+    <div class="social-buttons">
+      <a href="https://www.youtube.com/@rawellg" target="_blank" class="social-button youtube">YouTube</a>
+      <a href="https://www.twitch.tv/rawellgd" target="_blank" class="social-button twitch">Twitch</a>
+      <a href="https://github.com/RaWellGD" target="_blank" class="social-button github">GitHub</a>
     </div>
+  </div>
+</header>
+<section id="events" aria-hidden="true"></section>
+    <main id="level-list">
+    </main>
+    <a id="scrollToTop" title="Volver arriba" class="scroll-to-top hidden">
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="white"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-up"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 15l6 -6l6 6" /></svg>
+    </a>
+    <script>
+        const levels = [
+            {
+                top: 186,
+                name: "Congregation",
+                creator: "Presta",
+                video: "",
+                image: "images/congre.jpg"
+            },
+            {
+                top: 411,
+                name: "Night Rider",
+                creator: "LmAnubis",
+                video: "https://youtu.be/9mv4-tUXZTY",
+                image: "images/nightrider.png"
+            },
+            {
+                top: 0,
+                name: "???",
+                creator: "-",
+                video: "",
+                image: ""
+            },
+            {
+                top: 0,
+                name: "???",
+                creator: "-",
+                video: "",
+                image: ""
+            },
+            {
+                top: 0,
+                name: "???",
+                creator: "-",
+                video: "",
+                image: ""
+            },
+            {
+                top: 0,
+                name: "???",
+                creator: "-",
+                video: "",
+                image: ""
+            },
+            {
+                top: 0,
+                name: "???",
+                creator: "-",
+                video: "",
+                image: ""
+            }
+        ];
 
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="#" target="_blank" class="level">
-        <img src="Imágenes/desconocido.png" alt="Congregation">
-        <div class="level-info">
-          <h2>#5 – ???</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
+        const html = level => `
+                <article>
+                    <a href="${level.video}" target="_blank" class="level">
+                        <img src="${level.image || 'https://placehold.co/1920x1080/151515/ffffff?text=???'}" alt="${level.name}">
+                        <div class="level-info">
+                            <h2>#${level.top} – ${level.name}</h2>
+                            <p>by ${level.creator}</p>
+                            <p>Top #${level.top}</p>
+                        </div>
+                    </a>
+                </article>
+        `;
 
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="#" target="_blank" class="level">
-        <img src="Imágenes/desconocido.png" alt="Congregation">
-        <div class="level-info">
-          <h2>#6 – ???</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
+        const container = document.getElementById("level-list");
+        levels.forEach(level => container.innerHTML += html(level));
 
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="#" target="_blank" class="level">
-        <img src="Imágenes/desconocido.png" alt="Congregation">
-        <div class="level-info">
-          <h2>#7 – ???</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
+        window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 30) {
+        header.classList.add('scrolled');
+        } else {
+        header.classList.remove('scrolled');
+        }
+      });
 
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="#" target="_blank" class="level">
-        <img src="Imágenes/desconocido.png" alt="Congregation">
-        <div class="level-info">
-          <h2>#8 – ???</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
+const scrollToTopBtn = document.getElementById("scrollToTop");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    scrollToTopBtn.classList.remove("hidden");
+    scrollToTopBtn.classList.add("show");
+  } else {
+    scrollToTopBtn.classList.remove("show");
+    scrollToTopBtn.classList.add("hidden");
+  }
+});
 
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="#" target="_blank" class="level">
-        <img src="Imágenes/desconocido.png" alt="Congregation">
-        <div class="level-info">
-          <h2>#9 – ???</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+    </script>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-row">
+      <div class="footer-links">
+        <h4>Créditos</h4>
+        <ul>
+          <li>Adrihdev</li>
+          <li>AnderControl</li>
+        </ul>
+      </div>
 
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="#" target="_blank" class="level">
-        <img src="Imágenes/desconocido.png" alt="Congregation">
-        <div class="level-info">
-          <h2>#10 – ???</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
+      <div class="footer-links">
+        <h4>Sígueme</h4>
+        <div class="social-links">
+          <a href="https://www.youtube.com/@rawellg" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://x.com/rawellgd" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/rawelld742" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@rawellgd" target="_blank"><i class="fab fa-tiktok"></i></a>
         </div>
-      </a>
-            </article>
-        </section>
-    </main>
+      </div>
     </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
-
-    <div class="margen">
-    <main>
-        <section>
-            <article>
-        <a href="https://youtu.be/ipLRRzJ9sWg?si=aI3r1soLmrq3-c6G" target="_blank" class="level">
-        <img src="Imágenes/Congre.jpg" alt="Congregation">
-        <div class="level-info">
-          <h2>#1 – Congregation</h2>
-          <p>by Presta</p>
-          <p>Top #186</p>
-        </div>
-      </a>
-            </article>
-        </section>
-    </main>
-    </div>
+  </div>
+</footer>
 </body>
 </html>
